@@ -1,0 +1,28 @@
+//
+// Page Layout Styles
+// --------------------------------------------------
+
+@import "bootstrap-overrides/variables.less";
+@import "../assets/bootstrap/stylesheets/mixins.less";
+
+#site-content {
+	article {
+
+		> header {
+			.make-sm-column(12);
+		}
+
+		.content-block {
+			.make-sm-column(12);
+		}
+
+		> hr {
+			.make-sm-column(12);
+			margin-top:    @line-height-computed;
+			margin-bottom: @line-height-computed;
+			border: 0;
+			border-top: 1px solid mix(@text-color,white,20%);
+		}
+
+	} // article
+} // #site-content
